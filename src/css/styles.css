@@ -187,7 +187,24 @@ overflow: hidden;
 
 
 
+.load-more {
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  width: 125px;
+  height: 40px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  border: none;
+  transition: all 0.4s ease;
+  margin: 32px auto 16px;
+}
 
-
-
+.load-more:hover {
+    background: #6c8cff;
+  }
 

@@ -8,6 +8,12 @@
 // showLoader(). Ця функція нічого не приймає, повинна додавати клас для відображення лоадера. Нічого не повертає.
 // hideLoader(). Ця функція нічого не приймає, повинна прибирати клас для відображення лоадера. Нічого не повертає.
 
+// showLoadMoreButton(). Ця функція нічого не приймає, повинна додавати
+//  клас для відображення кнопки Load more. Нічого не повертає.
+
+// hideLoadMoreButton(). Ця функція нічого не приймає, повинна прибирати
+// клас для відображення кнопки Load more. Нічого не повертає.
+
 // webformatURL — посилання на маленьке зображення для списку карток у галереї
 // largeImageURL — посилання на велике зображення для модального вікна
 // tags — рядок з описом зображення. Підійде для атрибута alt
@@ -21,6 +27,7 @@ import SimpleLightbox from 'simplelightbox';
 
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
+export const loadMoreBtn = document.querySelector('.load-more');
 
 export const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
@@ -64,4 +71,12 @@ export function showLoader() {
 
 export function hideLoader() {
   loader.classList.add('hidden');
+}
+
+export function showLoadMoreButton() {
+  loadMoreBtn.classList.remove('hidden');
+}
+
+export function hideLoadMoreButton() {
+  loadMoreBtn.classList.add('hidden');
 }
